@@ -1,0 +1,16 @@
+<div class = "row ">
+            <?php foreach ($productos as $producto) {
+              ?>
+                    <div class = "col-lg-3 img-thumbnail" >
+                    <div width="230" height="310" class="img-thumbnail"><a href="producto/<?= $producto->id?>"><img class= "img-thumbnail img.fluid" src= <?=$producto->imagen ?>></a></div>
+                        <h2 ><?= $producto->producto?></h2>
+                        <h3><?= $producto->categoria?></h3>
+                        <p>Precio: <?= $producto->precio?></p>
+                        <p>Stock: <?= $producto->stock?></p>
+            </div>
+        <?php
+    
+            }
+?>
+</div>
+

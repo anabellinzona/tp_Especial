@@ -1,0 +1,11 @@
+<form action="deleteProducto" method = "POST" class="mb-3">
+    <label class="form-label">Producto</label>
+    <select name="producto" class="form-select">
+    <?php foreach ($productos as $producto) { ?>
+        <option value="<?= $producto->producto ?>">
+           <?= $producto->producto; } ?></option>
+           </select> 
+    <input type="submit" class="btn btn-primary">
+   </form>
+
+   <a class="btn btn-primary" href="volver">Volver</a>

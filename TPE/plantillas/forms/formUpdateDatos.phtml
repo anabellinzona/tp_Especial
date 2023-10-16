@@ -1,0 +1,17 @@
+<ul class="navbar-nav">
+        <?php foreach($productos as $prod){
+            ?> <h3 class="nav-item p-2 "><?= $prod->producto ?></h3>
+            <form action= "updateProducto/<?= $prod->id?>" method="post" class="mb-3">
+                <label class="form-label">Producto</label>
+                <input type="text" name="producto" class="form-control">
+                <label class="form-label">Precio</label>
+                <input type="number" name="precio" class="form-control">
+                <label class="form-label">Stock</label>
+                <input type="number" name="stock" class="form-control">
+                <input type="submit" class="btn btn-primary">
+            </form>
+        <?php
+            }
+        ?>
+        <a class="btn btn-primary" href="volver">Volver</a>
+</ul>
